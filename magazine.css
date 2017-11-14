@@ -65,13 +65,15 @@ nav a {
 .card h2 {
     transform: translateY(-200px);
     background-color: rgba(255,255,255,.85);
-    font-family: serif;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
     height: 50px;
 }
 
 .card h2:first-of-type::first-letter {
     font-size: 50px;
     color: red;
+    margin-right: 1px;
 }
 
 }
