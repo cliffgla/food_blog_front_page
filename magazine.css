@@ -40,13 +40,16 @@ nav {
 
 }
 
-.card h1 {
-    transform: translateY(-100px);
+.card h2 {
+    transform: translateY(-200px);
     background-color: rgba(255,255,255,.85);
     height: 50px;
-
-
+    padding-top: 10px;
 }
+
+
+
+
 
 
 }
@@ -56,6 +59,8 @@ nav {
     border: solid black 1px;
 
 }
+
+
 
 .card img {
     width: 100%;
