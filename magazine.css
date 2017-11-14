@@ -15,8 +15,9 @@
     /*display: grid;*/
     grid-template-columns: 250px;
     grid-template-rows: 250px;
-    grid-auto-rows: 250px;
+    grid-auto-rows: max-content;
     grid-gap: 5px;
+    text-align:center;
 }
 
 .card {
@@ -30,6 +31,46 @@
 /*Media Queries*/
 
 @media (min-width: 768px) {
+    .flexy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .col {
+        margin: 5px;
+    }
+    .col-1 {
+        display: grid;
+        grid-template-columns: minmax(150px, 1fr);
+        grid-gap: 5px;
+    }
+
+    .col-2 {
+        display: grid;
+        grid-template-columns: minmax(200px,1fr);
+        grid-template-rows: 75px;
+        grid-auto-rows: max-content;
+        grid-gap: 5px;
+    }
+
+    .col-3 {
+        display: grid;
+        grid-template-columns: minmax(150px,1fr);
+        grid-template-rows: 150px;
+        grid-gap: 5px;
+    }
+
+    .col-4 {
+        display: grid;
+        grid-template-columns: minmax(200px,1fr);
+        grid-template-rows: 225px;
+        grid-gap: 5px;
+    }
+
+}
+@media (min-width: 1024px) {
     .flexy {
         display: flex;
         flex-wrap: wrap;
@@ -72,9 +113,6 @@
         grid-template-rows: 225px;
         grid-auto-rows: 250px;
         grid-gap: 5px;
-    }
-    .card {
-        background-color: red;
     }
 
 }
