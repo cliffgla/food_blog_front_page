@@ -8,22 +8,38 @@
 /*Base Styles*/
 body {
     margin: 0;
+    /*background-color: #FFFC9A;*/
 }
 
 nav {
     display: inline-block;
     width: 100%;
-    border: solid black 1px;
+    border-bottom: solid black 1px;
+    height: 50px;
+    background-color: white;
+    z-index: 5;
+    position: fixed;
+    top:0;
     text-align: center;
+
+
+
+
 }
 
-.logo {
+nav a {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
 
-    background-color: goldenrod;
 }
 
 /*Main Content*/
-
+.title {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 50px;
+}
 
 .col {
     margin-top: 70px;
@@ -44,13 +60,12 @@ nav {
     transform: translateY(-200px);
     background-color: rgba(255,255,255,.85);
     height: 50px;
-    padding-top: 10px;
 }
 
-
-
-
-
+.card h2:first-of-type::first-letter {
+    font-size: 50px;
+    color: red;
+}
 
 }
 
@@ -79,12 +94,14 @@ nav {
 @media (min-width: 768px) {
 
 
-nav {
-    position: fixed;
-    z-index: 2;
-    top: 0;
+    nav {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        text-align: left;
+        padding-left: 4em;
 
-}
+    }
 
     .logo {
         height: 50px;
