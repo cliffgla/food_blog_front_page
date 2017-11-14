@@ -9,23 +9,18 @@
 
 /*Main Content*/
 
-.container {
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 120px;
-    /*grid-auto-rows:300px;*/
-    /*text-align: center;*/
+
+.col {
+    margin: 5px;
+    /*display: grid;*/
+    grid-template-columns: 250px;
+    grid-template-rows: 250px;
+    grid-auto-rows: 250px;
     grid-gap: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
-
 }
 
-.logo {
-    background-color: blue;
+.card {
+    background-color: red;
 }
 
 
@@ -35,42 +30,51 @@
 /*Media Queries*/
 
 @media (min-width: 768px) {
-    .container {
+    .flexy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .col {
+        margin: 5px;
+    }
+    .col-1 {
         display: grid;
-        grid-template-columns: repeat(9, 110px);
-        grid-template-rows: repeat(8,110px);
-        text-align: center;
-        /*grid-gap: 5px;*/
+        grid-template-columns: 200px;
+        grid-template-rows: 250px;
+        grid-auto-rows: 250px;
+        grid-gap: 5px;
+
+
+
     }
 
-    nav {
-        grid-column: 1 / -1 ;
-        background-color: green;
-        text-align: left;
+    .col-2 {
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: 75px;
+        grid-auto-rows: 250px;
+        grid-gap: 5px;
     }
 
-    .logo {
-        grid-column: 1 /4;
-        grid-row: 2;
-        background-color: blue;
+    .col-3 {
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: 150px;
+        grid-auto-rows: 250px;
+        grid-gap: 5px;
     }
 
-    .article-1 {
-        grid-column: 2 / 5;
-        grid-row: 3 / 6;
-        background-color: goldenrod;
+    .col-4 {
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: 225px;
+        grid-auto-rows: 250px;
+        grid-gap: 5px;
     }
-
-    .article-2 {
-        grid-column: 6 / 9;
-        grid-row: 3 / 6;
+    .card {
         background-color: red;
-    }
-
-    footer {
-        grid-column: 1/ -1;
-        grid-row: 10;
-        background-color: purple;
     }
 
 }
